@@ -16,7 +16,7 @@ Comp_size_25_calc.R
 Compost_fractions_ITS_0625_alo.R
 
 # Session infos
-Session_Info_021225.tyt
+Session_Info_021225.txt
 
 # Folders
 archive			Contains old R files and outdated summaries of Analysis
