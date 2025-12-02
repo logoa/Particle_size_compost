@@ -371,7 +371,7 @@ ANOVA_summary <- function(data = design.alpha, x1 = "compost" , x2= "size", x3= 
   #sink()
   
   
-# Rarefaction curves----
+# Rarefaction curves (Figure S3)----
   
   ## FUNGI
   #pdf(file="figures/F_rarefaction_fract.pdf", width = 6, height = 4)
@@ -657,7 +657,7 @@ ANOVA_summary <- function(data = design.alpha, x1 = "compost" , x2= "size", x3= 
   summary(ANOVA)
   #sink()
   
-  ## ITS 21.05.25 -----
+  ## ITS 21.05.25 (Figure S1 A) -----
   data_F_r <-data_0525_meta_ITS %>% filter(grepl("B", sample))
   data_F_r$Cq <- as.numeric(data_F_r$Cq)
   data_F_r_std <- data_0525_meta_ITS[!data_0525_meta_ITS$conc =="NA",]
@@ -748,7 +748,7 @@ ANOVA_summary <- function(data = design.alpha, x1 = "compost" , x2= "size", x3= 
   summary(ANOVA)
   #sink()
 
-  ## 16S 03.06.25------
+  ## 16S 03.06.25 (Figure S1 B)------
   
   data_B_r <-data_0306_meta_16S %>% filter(grepl("F", sample))
   data_B_r$Cq <- as.numeric(data_B_r$Cq)
@@ -908,7 +908,7 @@ ANOVA_summary <- function(data = design.alpha, x1 = "compost" , x2= "size", x3= 
   # Save file to data
   #write.csv(data_qPCR_meta, file="data/080725_qPCR_data_calc.csv", row.names = F )
   
-  ## Normalize unrarfied sequence count----
+  ## Normalize unrarfied sequence count (Table S2)----
   # Bacteria
 
   rownames(data_qPCR_meta) <- data_qPCR_meta$ID
