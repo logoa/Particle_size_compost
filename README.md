@@ -18,9 +18,8 @@ Compost_fractions_ITS_0625_alo.R
 # Session infos
 Session_Info_021225.txt
 
-# Folders
-archive			Contains old R files and outdated summaries of Analysis
-sequencing_data		Contains the asv table and tax files output files from the bioinformatical pipeline
-output			Contains results of Analysis
-data			Contains data
-figures			Contains figures
+# Raw bioinformatic output
+Contains the asv table and tax files output files from the bioinformatical pipeline
+
+# Other data files
+All files that are needed in the analysis
